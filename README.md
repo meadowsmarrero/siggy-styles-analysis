@@ -4,7 +4,7 @@
 
 ## Introduction
 - **Scenario:** one stylist in a salon needs to know how her service and
-  retail sales performed year over year, how clients spend, and who visits most.
+  retail sales performed between 1/25-9/25 and 1/26-9/26, how clients spend, and who visits most.
 - **Real-world obstacle:** revenue looks stable, but is it actually growing?
   Are her most loyal clients also her most valuable?
 - **Assumption:** analyzing only her own clients (not the whole salon) gives
@@ -16,18 +16,13 @@
 - **Weak retail attach:** client 27271 visited 76 times across both years and
   bought $0 retail; top spender 28049 visited 30 times and spent $396/visit.
 - **How I analyzed it:**
-  - Cleaned over 8,474 rows across five CSVs and one Excel file
-  - Reconciled a numeric-vs-string Client ID mismatch that was dropping
-    100% of rows (1,720 → 0) before the fix
-  - Removed title rows, encoding errors, and Grand Total rows
-  - Filtered ~1,700 salon-wide clients down to my stylist's 232
-- **Facts:** services –0.8%, retail +2.8%, spend-per-visit gap ~4x
+  - Analysis was run two ways — pandas and SQL
+  - Cleaned over 39,000 rows across six files.
+- **Facts:** services –0.8%, retail +2.8%, spend-per-visit gap
 
 ## Solutions (with tradeoffs)
   **Option A — checkout product suggestion for frequent visitors**
-  
   **Option B — bundle product discount with service for top spenders**
-
   **Option C — stock what top retail buyers actually purchase**
 
 ## Conclusion
