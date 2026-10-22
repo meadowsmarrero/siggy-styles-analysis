@@ -16,7 +16,7 @@
 - **Weak retail attach:** client 27271 visited 76 times across both years and
   bought $0 retail; top spender 28049 visited 30 times and spent $396/visit.
 - **How I analyzed it:**
-  - Cleaned over 3,500 transaction rows across five CSVs and one Excel file
+  - Cleaned over 8,474 rows across five CSVs and one Excel file
   - Reconciled a numeric-vs-string Client ID mismatch that was dropping
     100% of rows (1,720 → 0) before the fix
   - Removed title rows, encoding errors, and Grand Total rows
